@@ -30,7 +30,7 @@ public class DBConnection {
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            con=DriverManager.getConnection(StoreConstants.Connection_URL+StoreConstants.Database+"?user="+StoreConstants.USER+"&password="+StoreConstants.Password);
+            con=DriverManager.getConnection(ParkingConstants.Connection_URL+ParkingConstants.Database+"?user="+ParkingConstants.USER+"&password="+ParkingConstants.Password);
             System.out.println("Database Connection Succesful");
         }
         catch(Exception e)

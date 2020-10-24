@@ -1,6 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.parking.src.StoreConstants"%>
+<%@page import="com.parking.src.ParkingConstants"%>
 <%@page import="java.sql.PreparedStatement"%>
 
 
@@ -85,7 +85,7 @@
             <li>
             <a href="createParking.jsp">
               <i class="nc-icon nc-pin-3"></i>
-              <p>Createt Parking</p>
+              <p>Create Parking</p>
             </a>
           </li>
           <li>
@@ -207,6 +207,7 @@
       <th scope="col">Free</th>
       <th scope="col">Occupied</th>
         <th scope="col">Parking Created</th>
+           <th scope="col">Detail</th>
     </tr>
   </thead>
   <tbody>
@@ -233,6 +234,7 @@
       <td style="background-color:red"><%=rs.getInt("total_occupied")%></td>
      
       <td style="background-color:yellow"><%=rs.getInt("parking_created")%></td>
+      <td style="background-color:black"><a href="parkingDetails.jsp?buildNo=<%=rs.getString("bulding_no")%>&floorNo=<%=rs.getInt("floor_no")%>">Details</a></td>
      
     
      
@@ -251,6 +253,7 @@
       Contact Admin
       <%} %>
       </td>
+        <td style="background-color:black"><a href="parkingDetails.jsp?buildNo=<%=rs.getString("bulding_no")%>&floorNo=<%=rs.getInt("floor_no")%>">Details</a></td>
     </tr>
     <%} } %>
   </tbody>

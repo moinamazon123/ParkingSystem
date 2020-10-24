@@ -9,7 +9,7 @@
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>>loginreg.jsp</welcome-file>
+        <welcome-file>loginreg.jsp</welcome-file>
     </welcome-file-list>
     <session-config>
         <session-timeout>

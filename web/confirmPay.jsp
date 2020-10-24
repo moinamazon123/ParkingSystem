@@ -9,7 +9,7 @@
 
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.parking.src.StoreConstants"%>
+<%@page import="com.parking.src.ParkingConstants"%>
 <%@page import="java.sql.PreparedStatement"%>
 
 

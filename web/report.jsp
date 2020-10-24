@@ -1,6 +1,6 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="com.parking.src.StoreConstants"%>
+<%@page import="com.parking.src.ParkingConstants"%>
 <%@page import="java.sql.PreparedStatement"%>
 
 
@@ -246,7 +246,7 @@
       <td style="background-color:red"><%=rs.getInt("total_occupied")%></td>
      
       <td style="background-color:yellow"><%=rs.getInt("parking_created")%></td>
-     
+     <td style="background-color:gray"><a href="parkingDetails.jsp?buildNo=<%=rs.getString("bulding_no")%>&floorNo=<%=rs.getInt("floor_no")%>">Details</a></td>
     
      
        <% } else { %>

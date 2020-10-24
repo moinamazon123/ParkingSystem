@@ -9,7 +9,7 @@ package com.parking.src;
  *
  * @author moin
  */
-public interface StoreConstants {
+public interface ParkingConstants {
     
     public static final String JDBC_DRIVER="com.mysql.jdbc.Driver";
      public static final String Connection_URL="jdbc:mysql://localhost/";
