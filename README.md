@@ -4,7 +4,7 @@ This Project is basically a Parking lot booking system developed in java,servlet
 
 Project Set up:
 1: Clone the project and import in NetBeans 8.2.
-2: Before that try tio import database dump file attached here.Create database as Parking and dump data into it.If you need other names then change the details 
+2: Before that try tio import database dump file present inside web/dump folder .Create database as Parking and dump data into it.If you need other names then change the details 
 like database credentials inside ParkingConstants.java.
 3: After data dumped succesfully.Build and deploy the project.
 4: You need to add Tomcat server as server runtime in Netbean IDE before deploying.
